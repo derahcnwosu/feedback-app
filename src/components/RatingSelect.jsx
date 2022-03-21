@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useContext} from 'react/cjs/react.development'
+import React, { useState, useEffect, useContext} from 'react'
 import FeedbackContext from './context/FeedbackContext'
 
 
 function RatingSelect({select}) {
   const {feedbackEdit} = useContext(FeedbackContext)
+
   useEffect(() => {
     if(feedbackEdit.edit === true) {
       setSelected(feedbackEdit.item.rating)
