@@ -19,6 +19,7 @@ function App() {
               <Route exact path = '/' element = {
                 <>
                   <FeedbackForm />
+                  <FeedbackForm />
                   <FeedbackStats />
                   <FeedbackList />
                   <AboutLink />

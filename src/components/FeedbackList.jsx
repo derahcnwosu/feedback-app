@@ -19,10 +19,11 @@ function FeedbackList({handleDelete}) {
 
               key={item.id}
               initial = {{opacity: 0}}
-              animate = {{opacity: 1}}
-              transition={{duration: 0.7}} 
+              // animate = {{opacity: 1}}
+              transition={{duration: 1}} 
               exit={{opacity: 0}}  
-
+              whileInView = {{opacity: 1}}
+              viewport = {{once: true}}
             >
 
               <FeedbackItem key={item.id} item={item}/>
